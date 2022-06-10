@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen">
+  <link href="font-awesome/fontawesome.min.css" rel="stylesheet">
+  <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+  <link href="css/plugins/timeline/timeline.css" rel="stylesheet">
+  <link href="css/Aristo/Aristo.css" rel="stylesheet">
+  <link href="css/tables.css" rel="stylesheet">
+  <link href="css/ui-selene/jquery-ui-1.8.17.custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/sb-admin.css" type="text/css" media="screen">
+  <link href="css/custom_style.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="sidebar close">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img style="width: 40px; height: 40px;" src="images/logo.png">
+        </span>
+        <div class="text logo-text">
+          <span class="name">NEMSU-Tagbina</span>
+          <span class="profession">My Portal</span>
+        </div>
+      </div>
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+    <div class="menu-bar">
+      <div class="menu">
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="index.html">
+              <i class='bx bx-user alt icon'></i>
+              <span class="text nav-text">User</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="classchedules.html">
+              <i class='bx bxs-calendar alt-2 icon'></i>
+              <span class="text nav-text">Class Schedules</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="billspayment.html">
+              <i class='bx bxl-paypal icon'></i>
+              <span class="text nav-text">Bills & Payments</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="courseprospecctus.html">
+              <i class='bx bxs-graduation alt icon'></i>
+              <span class="text nav-text">Course Prospectus</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="transcriptrecords.html">
+              <i class='bx bxs-receipt icon'></i>
+              <span class="text nav-text">Transcript Records</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="electronicclearance.html">
+              <i class='bx bxs-book-content icon'></i>
+              <span class="text nav-text">Electronic Clearance</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="subjectofferings.html">
+              <i class='bx bxs-offer icon'></i>
+              <span class="text nav-text">Subject Offerings</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="enrollment.html">
+              <i class='bx bxs-food-menu icon'></i>
+              <span class="text nav-text">Subject Enrollment</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="evaluationlists.html">
+              <i class='bx bx-list-ol icon'></i>
+              <span class="text nav-text">Evaluation Lists</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="bottom-content">
+        <li class="">
+          <a href="login.html">
+            <i class='bx bx-log-out icon'></i>
+            <span class="text nav-text">Logout</span>
+          </a>
+        </li>
+        <li class="mode">
+          <div class="sun-moon">
+            <i class='bx bx-moon icon moon'></i>
+            <i class='bx bx-sun icon sun'></i>
+          </div>
+          <span class="mode-text text">Dark mode</span>
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+        </li>
+      </div>
+    </div>
+  </nav>
+  <div id="page-wrapper">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="page-header">
+          <i class='bx bxl-paypal icon'></i>
+          </i>My Bills &amp; Payments
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <i class="fa fa-money fa-fw"></i> Billing History
+          </div>
+          <div class="panel-body">
+            <div id="morris-area-chart">
+              <div class="panel-body">
+                <ul class="timeline">
+                  <li class="">
+                    <div class="timeline-badge danger">
+                      <i>
+                        <small>2021</small>
+                      </i>
+                    </div>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <h4 class="timeline-title">
+                          <span id="semester_2021">2nd semester</span>
+                          <small>
+                            <i>
+                              <br>Date Assessed: Mar 08, 2022 </i>
+                          </small>
+                        </h4>
+                      </div>
+                      <div class="timeline-body">
+                        <p></p>
+                        <table class=" reference table table-striped table-bordered table-hover">
+                          <tbody>
+                            <tr>
+                              <td>Account No:</td>
+                              <td style="text-align: right">
+                                <b>20307</b>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Amount:</td>
+                              <td align="right"> 7,160.00</td>
+                            </tr>
+                            <tr>
+                              <td>Paid:</td>
+                              <td align="right">0.00</td>
+                            </tr>
+                            <tr>
+                              <td>Balance:</td>
+                              <td align="right">7,160.00</td>
+                            </tr>
+                            <tr>
+                              <td>Remarks:</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <dd>
+                          <button class="btn btn-danger btn-sm" id="year_2021" data-toggle="modal"
+                            data-target="#myModal">View Payment Details</button>
+                        </dd>
+                        <p></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="timeline-inverted">
+                    <div class="timeline-badge danger">
+                      <i>
+                        <small>2021</small>
+                      </i>
+                    </div>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <h4 class="timeline-title">
+                          <span id="semester_2021">1st semester</span>
+                          <small>
+                            <i>
+                              <br>Date Assessed: Sep 20, 2021 </i>
+                          </small>
+                        </h4>
+                      </div>
+                      <div class="timeline-body">
+                        <p></p>
+                        <table class=" reference table table-striped table-bordered table-hover">
+                          <tbody>
+                            <tr>
+                              <td>Account No:</td>
+                              <td style="text-align: right">
+                                <b>15788</b>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Amount:</td>
+                              <td align="right"> 7,810.00</td>
+                            </tr>
+                            <tr>
+                              <td>Paid:</td>
+                              <td align="right">0.00</td>
+                            </tr>
+                            <tr>
+                              <td>Balance:</td>
+                              <td align="right">7,810.00</td>
+                            </tr>
+                            <tr>
+                              <td>Remarks:</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <dd>
+                          <button class="btn btn-danger btn-sm" id="year_2021" data-toggle="modal"
+                            data-target="#myModal">View Payment Details</button>
+                        </dd>
+                        <p></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="">
+                    <div class="timeline-badge danger">
+                      <i>
+                        <small>2020</small>
+                      </i>
+                    </div>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <h4 class="timeline-title">
+                          <span id="semester_2020">2nd semester</span>
+                          <small>
+                            <i>
+                              <br>Date Assessed: Mar 08, 2021 </i>
+                          </small>
+                        </h4>
+                      </div>
+                      <div class="timeline-body">
+                        <p></p>
+                        <table class=" reference table table-striped table-bordered table-hover">
+                          <tbody>
+                            <tr>
+                              <td>Account No:</td>
+                              <td style="text-align: right">
+                                <b>14596</b>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Amount:</td>
+                              <td align="right"> 8,060.00</td>
+                            </tr>
+                            <tr>
+                              <td>Paid:</td>
+                              <td align="right">0.00</td>
+                            </tr>
+                            <tr>
+                              <td>Balance:</td>
+                              <td align="right">8,060.00</td>
+                            </tr>
+                            <tr>
+                              <td>Remarks:</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <dd>
+                          <button class="btn btn-danger btn-sm" id="year_2020" data-toggle="modal"
+                            data-target="#myModal">View Payment Details</button>
+                        </dd>
+                        <p></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="timeline-inverted">
+                    <div class="timeline-badge danger">
+                      <i>
+                        <small>2020</small>
+                      </i>
+                    </div>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <h4 class="timeline-title">
+                          <span id="semester_2020">1st semester</span>
+                          <small>
+                            <i>
+                              <br>Date Assessed: Sep 16, 2020 </i>
+                          </small>
+                        </h4>
+                      </div>
+                      <div class="timeline-body">
+                        <p></p>
+                        <table class=" reference table table-striped table-bordered table-hover">
+                          <tbody>
+                            <tr>
+                              <td>Account No:</td>
+                              <td style="text-align: right">
+                                <b>11019</b>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Amount:</td>
+                              <td align="right"> 8,405.00</td>
+                            </tr>
+                            <tr>
+                              <td>Paid:</td>
+                              <td align="right">0.00</td>
+                            </tr>
+                            <tr>
+                              <td>Balance:</td>
+                              <td align="right">8,405.00</td>
+                            </tr>
+                            <tr>
+                              <td>Remarks:</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <dd>
+                          <button class="btn btn-danger btn-sm" id="year_2020" data-toggle="modal"
+                            data-target="#myModal">View Payment Details</button>
+                        </dd>
+                        <p></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="">
+                    <div class="timeline-badge danger">
+                      <i>
+                        <small>2019</small>
+                      </i>
+                    </div>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <h4 class="timeline-title">
+                          <span id="semester_2019">1st semester</span>
+                          <small>
+                            <i>
+                              <br>Date Assessed: Sep 06, 2019 </i>
+                          </small>
+                        </h4>
+                      </div>
+                      <div class="timeline-body">
+                        <p></p>
+                        <table class=" reference table table-striped table-bordered table-hover">
+                          <tbody>
+                            <tr>
+                              <td>Account No:</td>
+                              <td style="text-align: right">
+                                <b>7476</b>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Amount:</td>
+                              <td align="right"> 8,830.00</td>
+                            </tr>
+                            <tr>
+                              <td>Paid:</td>
+                              <td align="right">0.00</td>
+                            </tr>
+                            <tr>
+                              <td>Balance:</td>
+                              <td align="right">8,830.00</td>
+                            </tr>
+                            <tr>
+                              <td>Remarks:</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <dd>
+                          <button class="btn btn-danger btn-sm" id="year_2019" data-toggle="modal"
+                            data-target="#myModal">View Payment Details</button>
+                        </dd>
+                        <p></p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title" id="myModalLabel">Payment Details</h4>
+            </div>
+            <div class="modal-body">
+              <div class="panel-body">
+                <div class="table-responsive">
+                  <table class="reference table table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th style="text-align: center">Description</th>
+                        <th style="text-align: center">Subject</th>
+                        <th style="text-align: center">Amount</th>
+                        <th style="text-align: center">Paid</th>
+                        <th style="text-align: center">Balance</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align: left">Tuition without Discount</td>
+                        <td style="text-align: left">Math 2*</td>
+                        <td style="text-align: right">600.00</td>
+                        <td style="text-align: right">0.00</td>
+                        <td style="text-align: right">600.00</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: left">Tuition without Discount</td>
+                        <td style="text-align: left">GE-RPH</td>
+                        <td style="text-align: right">600.00</td>
+                        <td style="text-align: right">0.00</td>
+                        <td style="text-align: right">600.00</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: left">Tuition without Discount</td>
+                        <td style="text-align: left">CS 222*</td>
+                        <td style="text-align: right">600.00</td>
+                        <td style="text-align: right">0.00</td>
+                        <td style="text-align: right">600.00</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: left">Tuition without Discount</td>
+                        <td style="text-align: left">CS 223*</td>
+                        <td style="text-align: right">600.00</td>
+                        <td style="text-align: right">0.00</td>
+                        <td style="text-align: right">600.00</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: left">Tuition without Discount</td>
+                        <td style="text-align: left">PE 4</td>
+                        <td style="text-align: right">400.00</td>
+                        <td style="text-align: right">0.00</td>
+                        <td style="text-align: right">400.00</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: left">Tuition without Discount</td>
+                        <td style="text-align: left">Ecos 1</td>
+                        <td style="text-align: right">600.00</td>
+                        <td style="text-align: right">0.00</td>
+                        <td style="text-align: right">600.00</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: left">Tuition without Discount</td>
+                        <td style="text-align: left">CS 221*</td>
+                        <td style="text-align: right">600.00</td>
+                        <td style="text-align: right">0.00</td>
+                        <td style="text-align: right">600.00</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" style="text-align: center">Grand Total</td>
+                        <td style="text-align: right">4,000.00 </td>
+                        <td style="text-align: right">0.00 </td>
+                        <td style="text-align: right">4,000.00 </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+    toggle.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    })
+    modeSwitch.addEventListener("click", () => {
+      body.classList.toggle("dark");
+      if (body.classList.contains("dark")) {
+        modeText.innerText = "Light mode";
+      } else {
+        modeText.innerText = "Dark mode";
+      }
+    });
+  </script>
+</body>
+
+</html>

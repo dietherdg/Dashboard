@@ -1,0 +1,76 @@
+body {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    background-color: #c9c9c9;
+    background-blend-mode: lighten;
+    height: 100vh;
+}
+
+#login-ribbon {
+    width: 73px;
+    height: 103px;
+    background-size: 73px 103px;
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+}
+
+#login-circle {
+    font-size: 18px;
+    color: #fff;
+}
+
+#LoginForm_password {
+    background-repeat: no-repeat;
+    background-position: 6px center;
+    padding-left: 28px;
+}
+
+#LoginForm_username {
+    background-repeat: no-repeat;
+    background-position: 6px center;
+    padding-left: 28px;
+}
+
+#login-wrap {
+    width: 278px;
+    background-size: 32px 32px;
+    margin: auto;
+    position: relative;
+    border: 1px solid #000;
+    padding: 15px;
+    padding-top: 60px;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.errorMessage {
+    color: red;
+}
+
+#login-logo {
+    text-align: center;
+}
+
+#login-logo img {
+    box-shadow: 3px 2px 3px #141d50;
+    border-radius: 80px;
+    width: 128px;
+    height: 128px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-panel {
+    margin-top: 25%;
+}

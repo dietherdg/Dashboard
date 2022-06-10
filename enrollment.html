@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen">
+  <link href="font-awesome/fontawesome.min.css" rel="stylesheet">
+  <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+  <link href="css/plugins/timeline/timeline.css" rel="stylesheet">
+  <link href="css/Aristo/Aristo.css" rel="stylesheet">
+  <link href="css/tables.css" rel="stylesheet">
+  <link href="css/ui-selene/jquery-ui-1.8.17.custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/sb-admin.css" type="text/css" media="screen">
+  <link href="css/custom_style.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="sidebar close">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img style="width: 40px; height: 40px;" src="images/logo.png">
+        </span>
+        <div class="text logo-text">
+          <span class="name">NEMSU-Tagbina</span>
+          <span class="profession">My Portal</span>
+        </div>
+      </div>
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+    <div class="menu-bar">
+      <ul class="menu-links">
+        <li class="nav-link">
+          <a href="index.html">
+            <i class='bx bx-user alt icon'></i>
+            <span class="text nav-text">User</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="classchedules.html">
+            <i class='bx bxs-calendar alt icon'></i>
+            <span class="text nav-text">Class Schedules</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="billspayment.html">
+            <i class='bx bxl-paypal alt icon'></i>
+            <span class="text nav-text">Bills & Payments</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="courseprospecctus.html">
+            <i class='bx bxs-graduation alt icon'></i>
+            <span class="text nav-text">Course Prospectus</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="transcriptrecords.html">
+            <i class='bx bxs-receipt alt icon'></i>
+            <span class="text nav-text">Transcript Records</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="electronicclearance.html">
+            <i class='bx bxs-book-content alt icon'></i>
+            <span class="text nav-text">Electronic Clearance</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="subjectofferings.html">
+            <i class='bx bxs-offer alt icon'></i>
+            <span class="text nav-text">Subject Offerings</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="enrollment.html">
+            <i class='bx bxs-food-menu alt icon'></i>
+            <span class="text nav-text">Subject Enrollment</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="evaluationlists.html">
+            <i class='bx bx-list-ol alt icon'></i>
+            <span class="text nav-text">Evaluation Lists</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="bottom-content">
+        <li class="">
+          <a href="login.html">
+            <i class='bx bx-log-out alt icon'></i>
+            <span class="text nav-text">Logout</span>
+          </a>
+        </li>
+        <li class="mode">
+          <div class="sun-moon">
+            <i class='bx bx-moon icon moon'></i>
+            <i class='bx bx-sun icon sun'></i>
+          </div>
+          <span class="mode-text text">Dark mode</span>
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+        </li>
+      </div>
+    </div>
+  </nav>
+  <div id="page-wrapper">
+    <h1 class="page-header">
+      <i class='bx bxs-food-menu alt icon'></i>My Subject Enrollment
+    </h1>
+    <div class="page-content box" style="text-align: center;">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 style="margin: 0px;">
+            <span>Academic Year:</span>
+            <b>2021-2022</b>, <span>Semester:</span>
+            <b>2nd semester</b>
+          </h3>
+          <span>These are the allowed subjects that you can enroll in the current enrollment period.</span>
+        </div>
+        <div class="alert alert-danger">The enrollment schedule of the current period is closed.</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+    toggle.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    })
+    modeSwitch.addEventListener("click", () => {
+      body.classList.toggle("dark");
+      if (body.classList.contains("dark")) {
+        modeText.innerText = "Light mode";
+      } else {
+        modeText.innerText = "Dark mode";
+      }
+    });
+  </script>
+</body>
+
+</html>

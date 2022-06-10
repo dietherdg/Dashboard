@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen">
+    <link href="font-awesome/fontawesome.min.css" rel="stylesheet">
+    <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="css/plugins/timeline/timeline.css" rel="stylesheet">
+    <link href="css/Aristo/Aristo.css" rel="stylesheet">
+    <link href="css/tables.css" rel="stylesheet">
+    <link href="css/ui-selene/jquery-ui-1.8.17.custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/sb-admin.css" type="text/css" media="screen">
+    <link href="css/custom_style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img style="width: 40px; height: 40px;" src="images/logo.png">
+                </span>
+                <div class="text logo-text">
+                    <span class="name">NEMSU-Tagbina</span>
+                    <span class="profession">My Portal</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class='bx bx-user alt icon'></i>
+                            <span class="text nav-text">User</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="classchedules.html">
+                            <i class='bx bxs-calendar alt-2 icon'></i>
+                            <span class="text nav-text">Class Schedules</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="billspayment.html">
+                            <i class='bx bxl-paypal icon'></i>
+                            <span class="text nav-text">Bills & Payments</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="courseprospecctus.html">
+                            <i class='bx bxs-graduation alt icon'></i>
+                            <span class="text nav-text">Course Prospectus</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="transcriptrecords.html">
+                            <i class='bx bxs-receipt icon'></i>
+                            <span class="text nav-text">Transcript Records</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="electronicclearance.html">
+                            <i class='bx bxs-book-content icon'></i>
+                            <span class="text nav-text">Electronic Clearance</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="subjectofferings.html">
+                            <i class='bx bxs-offer icon'></i>
+                            <span class="text nav-text">Subject Offerings</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="enrollment.html">
+                            <i class='bx bxs-food-menu icon'></i>
+                            <span class="text nav-text">Subject Enrollment</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="evaluationlists.html">
+                            <i class='bx bx-list-ol icon'></i>
+                            <span class="text nav-text">Evaluation Lists</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="login.html">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
+
+    </nav>
+    <div id="page-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header"><i class='bx bxs-calendar alt icon'></i>My Class Schedules</h1>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Academic Year/Semester: 2021, 2nd semester</div>
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="reference table table-striped table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center">Subject Code</th>
+                                        <th style="text-align:center">Section</th>
+                                        <th style="text-align:center">Units</th>
+                                        <th style="text-align:center">Descriptive Title</th>
+                                        <th style="text-align:center">Schedule</th>
+                                        <th style="text-align:center">Room</th>
+                                        <th style="text-align:center">Instructor(s)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: left">CS 221*</td>
+                                        <td style="text-align: center">BSCS 2A</td>
+                                        <td style="text-align: center">3.00</td>
+                                        <td style="text-align: left">Algorithms &amp; Complexity</td>
+                                        <td style="text-align: left">M 08:00am-10:00am T 08:00am-09:00am</td>
+                                        <td style="text-align: left">NB Rm. 203</td>
+                                        <td style="text-align: left">JOSE JR. CANDIA</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left">CS 222*</td>
+                                        <td style="text-align: center">BSCS 2A</td>
+                                        <td style="text-align: center">3.00</td>
+                                        <td style="text-align: left">Information Management</td>
+                                        <td style="text-align: left">W 08:00am-11:00am M 11:00am-12:00pm T
+                                            11:00am-12:00pm</td>
+                                        <td style="text-align: left">NB Rm. 203</td>
+                                        <td style="text-align: left">JOSE JR. CANDIA</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left">CS 223*</td>
+                                        <td style="text-align: center">BSCS 2A</td>
+                                        <td style="text-align: center">3.00</td>
+                                        <td style="text-align: left">Web System &amp; Technologies</td>
+                                        <td style="text-align: left">M 02:00pm-05:00pm M 01:00pm-02:00pm T
+                                            09:00am-10:00am</td>
+                                        <td style="text-align: left">NB Rm. 203</td>
+                                        <td style="text-align: left">LANDREX REBUERA</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left">Ecos 1</td>
+                                        <td style="text-align: center">BSCS 2A</td>
+                                        <td style="text-align: center">3.00</td>
+                                        <td style="text-align: left">People and the Earth's Ecosystem</td>
+                                        <td style="text-align: left"></td>
+                                        <td style="text-align: left"></td>
+                                        <td style="text-align: left">LUZVIMINDA PANES</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left">GE-RPH</td>
+                                        <td style="text-align: center">BSCS 2A</td>
+                                        <td style="text-align: center">3.00</td>
+                                        <td style="text-align: left">Reading in the Philippine History</td>
+                                        <td style="text-align: left">MTW 07:00pm-08:00pm</td>
+                                        <td style="text-align: left">NB Rm. 203</td>
+                                        <td style="text-align: left">JAYSON HUSAIN</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left">Math 2*</td>
+                                        <td style="text-align: center">BSCS 2A</td>
+                                        <td style="text-align: center">3.00</td>
+                                        <td style="text-align: left">Theory &amp; Computation</td>
+                                        <td style="text-align: left">H 08:00am-10:00am T 02:00pm-03:00pm</td>
+                                        <td style="text-align: left">NB Rm. 203</td>
+                                        <td style="text-align: left">EMMER RUAYA</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left">PE 4</td>
+                                        <td style="text-align: center">BSCS 2A</td>
+                                        <td style="text-align: center">2.00</td>
+                                        <td style="text-align: left">Recreational Activities</td>
+                                        <td style="text-align: left">W 11:00am-12:00pm T 01:00pm-02:00pm</td>
+                                        <td style="text-align: left">NB Rm. 203</td>
+                                        <td style="text-align: left">NICOMEDES VILLAMOR</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        jQuery(function ($) {
+
+            Url = '';
+            $('.btn-info,.btn-danger').click(function () {
+                var strings = this.id.split('_');
+                var year = strings[1];
+                var sem = $('#semester_' + strings[1]).html();
+                $.ajax({
+                    url: Url,
+                    data: 'loadoffice=1&year=' + year + '&sem=' + sem,
+                    type: 'POST',
+                    success: function (data) {
+                        $('.modal-body').html(data);
+                    }
+
+                });
+            });
+
+        });
+
+        const body = document.querySelector('body'),
+            sidebar = body.querySelector('nav'),
+            toggle = body.querySelector(".toggle"),
+            modeSwitch = body.querySelector(".toggle-switch"),
+            modeText = body.querySelector(".mode-text");
+
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        })
+        modeSwitch.addEventListener("click", () => {
+            body.classList.toggle("dark");
+
+            if (body.classList.contains("dark")) {
+                modeText.innerText = "Light mode";
+            } else {
+                modeText.innerText = "Dark mode";
+
+            }
+        });
+    </script>
+    </div>
+
+</body>
+
+</html>

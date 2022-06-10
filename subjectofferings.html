@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen">
+  <link href="font-awesome/fontawesome.min.css" rel="stylesheet">
+  <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+  <link href="css/plugins/timeline/timeline.css" rel="stylesheet">
+  <link href="css/Aristo/Aristo.css" rel="stylesheet">
+  <link href="css/tables.css" rel="stylesheet">
+  <link href="css/ui-selene/jquery-ui-1.8.17.custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/sb-admin.css" type="text/css" media="screen">
+  <link href="css/custom_style.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="sidebar close">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img style="width: 40px; height: 40px;" src="images/logo.png">
+        </span>
+        <div class="text logo-text">
+          <span class="name">NEMSU-Tagbina</span>
+          <span class="profession">My Portal</span>
+        </div>
+      </div>
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+    <div class="menu-bar">
+      <div class="menu">
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="index.html">
+              <i class='bx bx-user alt icon'></i>
+              <span class="text nav-text">User</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="classchedules.html">
+              <i class='bx bxs-calendar alt-2 icon'></i>
+              <span class="text nav-text">Class Schedules</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="billspayment.html">
+              <i class='bx bxl-paypal icon'></i>
+              <span class="text nav-text">Bills & Payments</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="courseprospecctus.html">
+              <i class='bx bxs-graduation alt icon'></i>
+              <span class="text nav-text">Course Prospectus</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="transcriptrecords.html">
+              <i class='bx bxs-receipt icon'></i>
+              <span class="text nav-text">Transcript Records</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="electronicclearance.html">
+              <i class='bx bxs-book-content icon'></i>
+              <span class="text nav-text">Electronic Clearance</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="subjectofferings.html">
+              <i class='bx bxs-offer icon'></i>
+              <span class="text nav-text">Subject Offerings</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="enrollment.html">
+              <i class='bx bxs-food-menu icon'></i>
+              <span class="text nav-text">Subject Enrollment</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="evaluationlists.html">
+              <i class='bx bx-list-ol icon'></i>
+              <span class="text nav-text">Evaluation Lists</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="bottom-content">
+        <li class="">
+          <a href="login.html">
+            <i class='bx bx-log-out icon'></i>
+            <span class="text nav-text">Logout</span>
+          </a>
+        </li>
+        <li class="mode">
+          <div class="sun-moon">
+            <i class='bx bx-moon icon moon'></i>
+            <i class='bx bx-sun icon sun'></i>
+          </div>
+          <span class="mode-text text">Dark mode</span>
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+        </li>
+      </div>
+    </div>
+  </nav>
+  <div id="page-wrapper">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header">
+          <i class='bx bxs-offer icon'></i>My Subject Offerings
+        </h1>
+        <div class="panel panel-default">
+          <div class="panel-heading">Academic Year/Semester: 2021, 2nd semester</div>
+          <div class="panel-body">
+            <div class="table-responsive">
+              <select class="form-control" name="subjectoffering" id="subjectoffering">
+                <option value="0">[Offered Subject]</option>
+                <option value="2392">AE 1* - Basic Farm Machineries &amp; Mechanization, 3.00 units </option>
+                <option value="2388">AE 2* - Introduction to Water Management and Irrigation, 3.00 units</option>
+                <option value="2383">Ag. Econ 1* - Into to Microeconomics &amp; Macroeconomics, 3.00 units</option>
+                <option value="2391">Ag. Extn. 1 - Principles of Agricultural Extension and Comm., 3.00 units</option>
+                <option value="2386">Ag.Tech 10 - Basic Biotechnology , 3.00 units</option>
+                <option value="2353">Ag.Tech 14 - Thesis Manuscript &amp; Defense, 3.00 units </option>
+                <option value="2378">Ag.Tech 6 - Slaughter of Animals &amp; Animal Products Processing, 3.00 units
+                </option>
+                <option value="2379">Ag.Tech 7 - Pomology &amp; Orchard Management, 3.00 units </option>
+                <option value="2382">Ag.Tech 8 - Animal Nutrition and Feeding, 3.00 units</option>
+                <option value="2384">Ag.Tech 9 - Animal Health and Farm Sanitation, 3.00 units </option>
+                <option value="2381">Agri. 5 - Introduction to Agricultural Policy and Development, 3.00 units</option>
+                <option value="2387">Agri. 6 - Seminar B., 1.00 units</option>
+                <option value="2357">An. Sci. 1* - Principles of Animal Production, 3.00 units </option>
+                <option value="2405">BAC 2 - Business Law (Obligation and Contract), 3.00 units </option>
+                <option value="2406">BAC 3 - Taxation, 3.00 units</option>
+                <option value="2396">BAC 7 - Business Research (Concept &amp; Techniques), 3.00 units</option>
+                <option value="2372">BME 2 - Strategic Management In Tourism and Hospitality Industry, 3.00 units
+                </option>
+                <option value="2373">BME 3 - Total Quality Management, 3.00 units</option>
+                <option value="2354">Bio 2 - Zoology, 3.00 units</option>
+                <option value="2426">Bio. 3 - Microbiology and Parasitology, 4.00 units</option>
+                <option value="2393">Bio. 3* - Natural Resources and Environmental Management, 3.00 units</option>
+                <option value="2425">Bio. 4 - Anatomy and Physiology, 4.00 units</option>
+                <option value="2421">CA 2 - Competency Assessment 2, 3.00 units</option>
+                <option value="2397">CBMEC 2 - Operations Management (TQM), 3.00 units</option>
+                <option value="2359">CP 2* - Approaches and Practices in Pest Mgt., 3.00 units </option>
+                <option value="2329">CS 121* - Discrete Structures 1, 3.00 units</option>
+                <option value="2333">CS 122* - Intermediate Programming-Java Prog., 3.00 units </option>
+                <option value="2334">CS 123* - Multimedia Systems, 3.00 units</option>
+                <option value="2338">CS 221* - Algorithms &amp; Complexity, 3.00 units</option>
+                <option value="2340">CS 222* - Information Management, 3.00 units</option>
+                <option value="2339">CS 223* - Web System &amp; Technologies, 3.00 units</option>
+                <option value="2344">CS 321* - Programming Languages, 3.00 units</option>
+                <option value="2345">CS 322 - Software Engineering 1, 3.00 units</option>
+                <option value="2450">CS 323 - Social Issues and Professional Practice 1, 3.00 units </option>
+                <option value="2451">CS 324A - Graphics and Visual Computing - Elective 2, 3.00 units</option>
+                <option value="2452">CS 325A - Mobile Computing 1, 3.00 units</option>
+                <option value="2453">CS 326 A - Modelling and Simulation, 3.00 units</option>
+                <option value="2349">CS 421* - Networks and Communications, 3.00 units</option>
+                <option value="2350">CS 422* - CS Thesis Writing 2, 3.00 units</option>
+                <option value="2389">Chem 2 - Analytical Chemistry, 5.00 units</option>
+                <option value="2454">Chem 2* - General Biochemistry, 3.00 units</option>
+                <option value="2434">Chem 4 - Biochemistry, 3.00 units</option>
+                <option value="2355">Crop Sci 1 - Principles of Crop Production, 3.00 units</option>
+                <option value="2455">Ecos 1 - People and the Earth's Ecosystem, 3.00 units</option>
+                <option value="2431">Educ 5 ** - Assessment in Learning 2, 3.00 units</option>
+                <option value="2438">Educ 6** - The Teaching &amp; The Community, School, Culture, amd Organizational
+                  Leadership, 3.00 units</option>
+                <option value="2430">Educ 7* - Foundation of Special and Inclusive Education, 3.00 units</option>
+                <option value="2414">Educ. 10 - Building and Enhancing New Literacies across the Curriculum, 3.00 units
+                </option>
+                <option value="2446">Educ. 11* - Teaching Internship, 6.00 units</option>
+                <option value="2447">Educ. 2* - Facilitating Learner-Centered Teaching, 3.00 units </option>
+                <option value="2437">Educ. 3 - The Teaching Profession, 3.00 units</option>
+                <option value="2439">Educ. 4 * - Assessment in Learning 1, 3.00 units</option>
+                <option value="2441">Educ. 8 - Technology for Teaching &amp; Learning 1, 3.00 units </option>
+                <option value="2432">Educ. 8a - Technology for Teaching and Learning 2, 3.00 units </option>
+                <option value="2417">Educ. 9 - The Teacher and the School Curriculum, 3.00 units </option>
+                <option value="2419">Elective - Teaching Multi-Grade Classes, 3.00 units</option>
+                <option value="2442">English 1* - Advanced Technical Writing, 3.00 units</option>
+                <option value="2408">FM 2 - Financial Analysis and Reporting, 3.00 units</option>
+                <option value="2409">FM 3 - Banking and Financial Institution, 3.00 units</option>
+                <option value="2402">FM 6 - Credit and Collection, 3.00 units</option>
+                <option value="2403">FM 7 - Capital Markets Management, 3.00 units</option>
+                <option value="2348">FM 9* - Practicum/Work Integrated Learning (600hrs), 6.00 units </option>
+                <option value="2423">Fil. 102* - Pagtuturo ng Filipino sa Elementarya II (Panitikan ng Pilipinas), 3.00
+                  units</option>
+                <option value="2363">GE-AA - Art Appreciation, 3.00 units</option>
+                <option value="2330">GE-BC - Business Correspondence, 3.00 units</option>
+                <option value="2337">GE-CW - The Contemporary World, 3.00 units</option>
+                <option value="2332">GE-E - Ethics, 3.00 units</option>
+                <option value="2360">GE-Elec.1 - Environmental Science, 3.00 units</option>
+                <option value="2385">GE-Elective 2 - Living in the IT Era, 3.00 units</option>
+                <option value="2390">GE-Elective 3 - People and Earth Ecosystem, 3.00 units</option>
+                <option value="2356">GE-MMW - Mathematics in the Modern World , 3.00 units</option>
+                <option value="2361">GE-PC - Purposive Communication , 3.00 units</option>
+                <option value="2343">GE-RPH - Reading in the Philippine History, 3.00 units</option>
+                <option value="2331">GE-STS - Science, Technology &amp; Society, 3.00 units</option>
+                <option value="2371">HMPE 2 - Housekeeping Operations, 3.00 units</option>
+                <option value="2375">HMPE 5 - Bar and Beverages Management w/ lab., 3.00 units </option>
+                <option value="2368">HPC 2 - Fundamentals in Lodging Operations, 3.00 units</option>
+                <option value="2366">HPC 6 - Fundamentals of Food Service Operations, 3.00 units </option>
+                <option value="2369">HPC 7 - Introduction to Meetings, Incentives, Conferences and Events Management
+                  (MICE), 3.00 units</option>
+                <option value="2370">HPC 8 - Foriegn Language 2 (Spanish 2), 3.00 units</option>
+                <option value="2374">HPC 9 - Ergonomics and Facilities Planning for the Hospitality Industry, 3.00 units
+                </option>
+                <option value="2415">HRM 2 - Labor Law and Legislation, 3.00 units</option>
+                <option value="2416">HRM 3 - Recruitment &amp; Selection, 3.00 units</option>
+                <option value="2398">HRM 6 - Labor Relation and Negotiatiion, 3.00 units</option>
+                <option value="2399">HRM 7 - Special Topics in Human Resource Management, 3.00 units </option>
+                <option value="2347">HRM 9 - Practicum/Work Integrated Learning (600hrs), 6.00 units </option>
+                <option value="2410">LIT 100 - Literature in the Contemporary World, 3.00 units </option>
+                <option value="2422">MCE - Multi-Cultural Education, 3.00 units</option>
+                <option value="2448">MTB-MLE - Content Pedagogy for Mother-Tongue, 3.00 units </option>
+                <option value="2440">Math 102 - Teaching Mathematics in the Intermediate Grades, 3.00 units</option>
+                <option value="2341">Math 2* - Theory &amp; Computation, 3.00 units</option>
+                <option value="2336">NSTP 2 - CWTS/ROTC, 3.00 units</option>
+                <option value="2449">OJT (240 hrs) - Occupational Internship, 6.00 units</option>
+                <option value="2335">PE 2 - Rhythmic Activities, 2.00 units</option>
+                <option value="2342">PE 4 - Recreational Activities, 2.00 units</option>
+                <option value="2445">Physics 1* - Fluid Mechanics, 3.00 units</option>
+                <option value="2435">Physics 3 - Electricty &amp; Magnetism, 4.00 units</option>
+                <option value="2352">Practicum - Practicum-Hotel &amp; Restaurant Practicum, 6.00 units</option>
+                <option value="2420">RES - Research in Education, 3.00 units</option>
+                <option value="2433">Rizal 102 - Life and Works of Rizal, 3.00 units</option>
+                <option value="2443">SSC 102 - Teaching Social Studies in Elementary Grades (Culture and Geography),
+                  3.00 units</option>
+                <option value="2444">SSP-PEE - People &amp; Earth Ecosystem, 3.00 units</option>
+                <option value="2429">SSP-PPC - Philippine Pop Culture, 3.00 units</option>
+                <option value="2428">Sci 102 - Teaching Science in Elementary Grades (Physics Earth and Space Science,
+                  3.00 units</option>
+                <option value="2427">Sci 118 - Research in Teaching, 3.00 units</option>
+                <option value="2456">Sci. 101* - The Teaching Science, 3.00 units</option>
+                <option value="2380">THC 10 - Entrepreneurship in Tourism aand Hospitality, 3.00 units</option>
+                <option value="2367">THC 3 - Quality Service Management in Tourism and Hospitality, 3.00 units</option>
+                <option value="2365">THC 5 - Micro Perspective of Tourism and Hospitality, 3.00 units</option>
+                <option value="2376">THC 8 - Legal Aspects in Tourism and Hospitality, 3.00 units </option>
+                <option value="2377">THC 9 - Multicultural Diversity in Workplace for the Tourism, 3.00 units</option>
+                <option value="2418">TLE 102 - Edukasyong Pantahanan aat Pangkabuhayan w/ Entrep, 3.00 units</option>
+                <option value="2424">VED - Good Manners &amp; Right Conduct (Edukasyon sa Pagpapakatao), 3.00 units
+                </option>
+                <option value="2407">e FM 1 - Public finance, 3.00 units</option>
+                <option value="2412">eFM 2 - Treasury Management, 3.00 units</option>
+                <option value="2404">eGE 2/GE-GS - Gender and Society, 3.00 units</option>
+                <option value="2362">eHRM/eFM-CM - Cooperative Management, 3.00 units</option>
+                <option value="2413">iAcctg. 3 - Managerial Accounting, 3.00 units</option>
+                <option value="2395">iAcctg.1* - Partnership &amp; Corporation Accounting, 6.00 units</option>
+                <option value="2364">iEng.1 - Business Cummunication, 3.00 units</option>
+                <option value="2400">iHRM - Strategic Human Resource Management, 3.00 units</option>
+                <option value="2411">iIT 1 - Management Information System, 3.00 units</option>
+                <option value="2401">iPCL - Partnership and Corporation Law, 3.00 units</option>
+              </select>
+              <div class="panel panel-default"></div>
+              <div id="subjectstorage"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    /*
+                                      <![CDATA[*/
+    jQuery(function ($) {
+      var Url = '';
+      var choice = 0;
+
+      function load_subject() {
+        $.ajax({
+          url: Url,
+          type: 'POST',
+          data: 'viewsections=1&code=' + $('#subjectoffering').val(),
+          success: function (str) {
+            $('#subjectstorage').html(str);
+          },
+          error: function (x, e) {
+            if (x.status == 0) {
+              $('#subjectstorage').html('<h2>You are offline. Please check your network connection.</h2>');
+            } else $('#subjectstorage').html('<h2>Something went wrong in processing your request. Please try again.</h2>');
+          }
+        });
+      }
+      $('#subjectoffering').change(function () {
+        $('#subjectstorage').html('<h2>Loading request. Please wait.</h2>');
+        load_subject();
+      });
+    });
+    const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+    toggle.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    })
+    modeSwitch.addEventListener("click", () => {
+      body.classList.toggle("dark");
+      if (body.classList.contains("dark")) {
+        modeText.innerText = "Light mode";
+      } else {
+        modeText.innerText = "Dark mode";
+      }
+    });
+      /*]]>*/
+  </script>
+</body>
+
+</html>
